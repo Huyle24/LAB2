@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+:root{
+  --box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+
+}
+body{
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  outline: none;
+  line-height: 1.5;
+}
+
+ul{
+  list-style: none;
+  
+}
+
+a{
+  text-decoration: none;
+}
+
+section{
+    padding: 2rem 10%;
+    margin-top: 4.5rem;
+
+}
+section:nth-child(even){
+    background: #eee;
+} 
+
+h1, h2{
+  color: #0E55C1;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+h1{
+  font-size: 2.5rem;
+}
+
+h2:hover,
+h1:hover{
+  letter-spacing: 2px;
+}
+
+.profile,
+.experiences{
+  text-align: center;
+}
+
+.profile p{
+  margin-bottom: 20px;
+}
+
+.container-info{
+  width: 100%;
+  border-top: 1px solid #111;
+  display: inline-flex;
+}
+
+.container-info .about{
+  margin-top: 60px;
+  width: calc(100% / 3);
+}
+
+.container-info .img-avt{
+  margin-top: 30px;
+  width: calc(100% / 3);
+  height: 100%;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.img-avt img{
+  max-width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+.img-avt img:hover{
+  transform: scale(1.05);
+}
+
+.container-info .detail{
+  margin-top: 60px;
+  width: calc(100% / 3);
+}
+
+.container-exp .title{
+  border-top: 1px solid #111;
+  padding-top: 20px;
+}
+
+.container-exp .container-info__exp{
+  display: inline-flex;
+  margin-bottom: 20px;
+  width: 100%;
+
+}
+.container-info__exp .title-info{
+  width: 30%;
+}
+
+.container-info__exp .detail-info{
+  width: 70%;
+}
+
+.container-info__exp .detail-info p:nth-child(1){
+  color: black;
+  font-weight: bold;
+}
+
+.title-info p:nth-child(1){
+  color: black;
+  font-weight: bold;
+}
+.container-skills{
+  display: flex;
+  margin-bottom: 30px;
+}
+.tab-left{
+  width: 50%;
+  margin-right: 50px;
+}
+.icon{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.icon:hover{
+  background: #ccc;
+}
+.tab-right{
+  width: 50%;
+}
+.fa-star,
+.fa-star-half-stroke{
+  color: blue;
+}
+.abilities{
+  border-bottom: 1px solid #111;
+}
+.skill{
+  margin-top: 20px;
+}
+.title-github{
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.btn-cover{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #111;
+
+}
+.btn-github{
+  padding: 8px 20px;
+  border-radius: 6px;
+  background: darkgreen;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 40px;
+
+}
+.btn-github:hover{
+  background: rgb(3, 172, 3);
+
+}
+.btn-click-change{
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+/* css header nav  */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  /* box-shadow: var(--box-shadow); */
+  background-color: black;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 4px;
+  
+}
+
+header .navbar a{
+  font-size: 1.7rem;
+  /* border-radius: 0.5rem; */
+  padding: 0.2rem 1.5rem;
+  color:#fff;
+
+}
+header .navbar a.active,
+header .navbar a:hover{
+  background: white;
+  color:black;
+}
+

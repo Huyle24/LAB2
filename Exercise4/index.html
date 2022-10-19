@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex4</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <section>
+        <div class="title-container">
+            <span>Drum</span>
+            <img class="logo-img" src="https://f7-zpcloud.zdn.vn/1017756757484395760/0cd6e9c7dcf01bae42e1.jpg" alt="">
+            <span>Kit</span>
+        </div>
+        <div class="guide">Guide: Click or Keypress play sound</div>
+        <div class="box-container">
+            <img id="img1" class="img1" src="https://f6-zpcloud.zdn.vn/5019189054820076792/b35a44564261853fdc70.jpg" alt="">
+            <img class="img2" src="https://f7-zpcloud.zdn.vn/3009575461302567400/f3c675547263b53dec72.jpg" alt="">
+            <img class="img3" src="https://f7-zpcloud.zdn.vn/2306653036112524303/be7d6c956ba2acfcf5b3.jpg" alt="">
+            <img class="img4" src="https://f6-zpcloud.zdn.vn/1288211217237084663/567cff0df83a3f64662b.jpg" alt="">
+            <img class="img5" src="https://f7-zpcloud.zdn.vn/8258064645009181763/60f6d37ed9491e174758.jpg" alt="">
+            <img class="img6" src="https://f7-zpcloud.zdn.vn/3901930279540826501/a4572dac279be0c5b98a.jpg" alt="">
+            <img class="img7" src="https://f6-zpcloud.zdn.vn/498052488160009106/9105498a42bd85e3dcac.jpg" alt="">
+
+        </div>
+    </section>
+
+    <!-- add lib jquery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var audio1 = new Audio("./music/tom-1.mp3");
+        var audio2 = new Audio("./music/tom-2.mp3");
+        var audio3 = new Audio("./music/tom-3.mp3");
+        var audio4 = new Audio("./music/tom-4.mp3");
+        var audio5 = new Audio("./music/snare.mp3");
+        var audio6 = new Audio("./music/crash.mp3");
+        var audio7 = new Audio("./music/kick-bass.mp3");
+
+        $('.img1').click(function() {
+            audio1.play();
+        });
+        $('.img2').click(function() {
+            audio2.play();
+        });
+        $('.img3').click(function() {
+            audio3.play();
+        });
+        $('.img4').click(function() {
+            audio4.play();
+        });
+        $('.img5').click(function() {
+            audio5.play();
+        });
+        $('.img6').click(function() {
+            audio6.play();
+        });
+        $('.img7').click(function() {
+            audio7.play();
+        });
+
+
+        $(document).on('keydown', function(e) {
+        switch(e.keyCode){
+            case 87:
+                audio1.play();
+                break;
+            case 65:
+                audio2.play();
+                break;
+            case 83:
+                audio3.play();
+                break;
+            case 68:
+                audio4.play();
+                break;
+            case 74:
+                audio5.play();
+                break;
+            case 75:
+                audio6.play();
+                break;
+            case 76:
+                audio7.play();
+                break;
+
+            default:
+    
+    }
+
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework1</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <div class="profile">
+            <h1>Profile</h1>
+            <p>I'm a student</p>
+        </div>
+        <div class="info">
+            <div class="about">
+                <h2>About me</h2>
+                <p>I'm a lovely cat. I have passion in IT 
+                    and I want to become data analyst
+                </p>
+            </div>
+            <div class="ava">
+                <img src="data:image/jpeg;base64,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" alt=" ">
+            </div>
+            <div class="detail">
+                
+                    <h2>Details</h2>
+                    <h3>Name:</h3>
+                    <p>Le Quang Huy</p>
+                    <h3>Age:</h3>
+                    <p>4 years</p>
+                    <h3>Location:</h3>
+                    <p>UIT, VNU-HCM</p>
+            
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="experiences">
+            <h1>Experiences</h1>
+        </div>
+        <div class="kn">
+            <div class="title">
+                <h2>Educations</h2>
+            </div>
+            <div class="info__kn">
+                <div class="title-info">
+                    <p>UIT, VNU-HCM</p>
+                    <p>Apr 2019 - June 2024</p>
+                </div>
+                <div class="detail-info">
+                    <p>Infomation System</p>
+                    <p>The education was mainly System design-basec course, but I also learned
+                        about Web, Data analysis and more. During my time in college, I speciallized in 
+                        OOP, data science. Now, I'm learning web development
+                    </p>
+                </div>
+            </div>
+        </div>
+      
+        <div class="kn">
+            <div class="title">
+                <h2>Working Experiences</h2>
+            </div>
+            <div class="info__kn">
+                <div class="title-info">
+                    <p>Facebook I Fresher Engineer</p>
+                    <p>Sep 2021 - current</p>
+                </div>
+                <div class="detail-info">
+                    <p>Partime - Fresher Web Developer</p>
+                    <p>Working as a Fresher Developer on a dating function on Facebook page. dating
+                        function is an app as Tinder
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="abilities">
+            <h1>Abilities</h1>
+        </div>
+        <div class="abilities">
+            <h2 class="skill">Skills</h2>
+            <div class="skills">
+                <div class="tab-left">
+                    <div class="icon">
+                        <p>HTML/CSS</p>
+                        <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <p>SQL</p>
+                        <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <p>JQuery</p>
+                        <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <p>Javascript</p>
+                        <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>      s
+                </div>
+                <div class="tab-right">
+                    <div class="icon">
+                        <p>OOP</p>
+                        <div class="container-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <p>SEO</p>
+                        <div class="container-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <p>React</p>
+                        <div class="container-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                   
+
+                </div>
+
+            </div>
+
+            <p class="title-github">See my profile on github</p>
+            <div class="btn-cover">
+                <button class="btn-github" type="submit">See profile on Github</button>
+            </div>
+
+        </div>
+        <div class="abilities">
+            <h2 class="skill">Languages</h2>
+            <div class="skills">
+                <div class="tab-left">
+                    <div class="icon">
+                        <p>Vietnamese (Native)</p>
+                        <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="icon">
+                        <p>English (IELTS 7.0)</p>
+                        <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>      
+                </div>
+                <div class="tab-right">
+                    <div class="icon">
+                        <p>Cat (Mother Tongue)</p>
+                        <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <p>Dog (My enemy)</p>
+                        <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    
+                   
+
+                </div>
+
+            </div>
+
+          
+
+        </div>
+
+    </section>
+
+    
+    <script src="./main.js"></script>
+</body>
+</html>

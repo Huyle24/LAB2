@@ -1,0 +1,179 @@
+:root{
+  --box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+
+}
+body{
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  outline: none;
+  line-height: 1.5;
+}
+
+ul{
+  list-style: none;
+  
+}
+
+a{
+  text-decoration: none;
+}
+
+section{
+    padding: 2rem 10%;
+}
+/* section:nth-child(even){
+    background: #eee;
+} */
+
+h1, h2{
+  color: #0E55C1;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+h1{
+  font-size: 2.5rem;
+}
+
+h2:hover,
+h1:hover{
+  letter-spacing: 2px;
+}
+
+.profile,
+.experiences{
+  text-align: center;
+}
+
+.profile p{
+  margin-bottom: 20px;
+}
+
+.info{
+  width: 100%;
+  border-top: 1px solid #111;
+  display: inline-flex;
+}
+
+.info .about{
+  margin-top: 60px;
+  width: calc(100% / 3);
+}
+
+.info .ava{
+  margin-top: 30px;
+  width: calc(100% / 3);
+  height: 100%;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.img-avt img{
+  max-width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+.img-avt img:hover{
+  transform: scale(1.05);
+}
+
+.info .detail{
+  margin-top: 60px;
+  width: calc(100% / 3);
+}
+
+.kn .title{
+  border-top: 1px solid #111;
+  padding-top: 20px;
+}
+
+.kn.container-info__exp{
+  display: inline-flex;
+  margin-bottom: 20px;
+  width: 100%;
+
+}
+.info__kn .title-info{
+  width: 30%;
+}
+
+.info__kn .detail-info{
+  width: 70%;
+}
+
+.info__kn .detail-info p:nth-child(1){
+  color: black;
+  font-weight: bold;
+}
+
+.title-info p:nth-child(1){
+  color: black;
+  font-weight: bold;
+}
+.skills{
+  display: flex;
+  margin-bottom: 30px;
+}
+.tab-left{
+  width: 50%;
+  margin-right: 50px;
+}
+.abilities{
+  border-bottom: 1px solid #111;
+}
+.skill{
+  margin-top: 20px;
+}
+.title-github{
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 16px;}
+.icon{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.icon:hover{
+  background: #ccc;
+}
+.tab-right{
+  width: 50%;
+}
+.fa-star,
+.fa-star-half-stroke{
+  color: Blue;
+}
+
+
+.btn-github:hover{
+  background: darkgreen;
+
+}
+.btn-cover{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #111;
+
+}
+.btn-github{
+  padding: 8px 20px;
+  border-radius: 6px;
+  background: darkgreen  ;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 40px;
+
+}
